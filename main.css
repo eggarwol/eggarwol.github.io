@@ -1,0 +1,241 @@
+/********************Overall CSS*************************/
+html,
+body {
+    margin:0;
+	padding:0;
+	height:100%;
+	overflow-x:hidden;
+	background-color:#282828;
+    background-image:url("images/black_linen_v2_@2X.png");
+}
+#wrapper{
+	min-height:100%;
+	position:relative;
+}
+#navbar{
+    position:absolute;
+    width:100%;
+	min-width:900px;
+    height:80px;
+	vertical-align:center;
+    background-color: #363636; 
+}
+#navbar ul {
+    position:absolute;
+    top:50%;
+	transform: translate(0, -50%);
+    right:0;
+    margin: 0;
+    padding: 0px; 
+    border: 0;
+    list-style-type: none;
+} 
+#navbar p {
+	font-size:50px;
+	font-family:"Arial Unicode MS";
+	color:white;
+    margin: 0;
+	position:absolute;
+	top:50%;
+	transform: translate(0, -50%);
+	margin-left:30px;
+    cellspacing: 0;
+    cellpadding: 0;
+} 
+#navbar ul li {
+    display:inline;
+} 
+#navbar a { 
+    text-decoration: none;
+    font-size: 20px;
+	padding-right:15px;
+	padding-left:15px;
+	padding-top:30px;
+	padding-bottom:30px;
+    color: white; 
+} 
+#navbar ul li a:hover { 
+    color: #0EC6D7; 
+    background-color: #424242; 
+}
+#footerbar{
+    position:absolute;
+	bottom:0;
+	width:100%;
+	min-width:900px;
+	height:80px;
+    background-color: #363636;
+}
+#footerbar ul{
+	position:absolute;
+    bottom:0;
+    right:0;
+    margin: 0;
+    padding: 0px; 
+    border: 0;
+    list-style-type: none;
+}
+#footerbar ul li{
+	display:inline;
+}
+#footerbar a img { 
+    width:50px;
+	padding:.7vw;
+}
+/***************************Home Page CSS*********************************/
+#mainbody{
+	padding-top:70px;
+	padding-bottom:70px;
+}
+#mainbody .top{
+	margin-top:35vh;
+	margin-bottom:0;
+	text-align:center;
+	color:white;
+	font-size:100px;
+}
+#mainbody .sub{
+	margin-top:2px;
+	text-align:center;
+	color:white;
+	font-size:35px;
+}
+
+/************************About Me Page CSS********************************/
+#aboutmebody{
+	padding-top:15vh;
+	padding-bottom:70px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#aboutmebody .title{
+		font-size:60px;
+		text-align:center;
+		color:white;
+		margin:0px;
+		margin-top:50px;
+}
+#imagebody .headshot{
+	width:27vh;
+	min-width:300px;
+	margin-top:1vh;
+	display:block;
+	margin:auto;
+}
+#tabbio{
+	padding-bottom:25vh;
+}	
+#textbody .bio{
+	font-size:20px;
+	color:white;
+	width:70vh;
+	/**margin-left:10vw;**/
+	min-width:400px;
+	text-indent: 50px;
+}
+/***************************Contact Page CSS*********************************/
+#contactbody{
+	display:block;
+	padding-top:15vh;
+	margin:auto;
+	width:100%;
+}
+#contactbodyhead p{
+	font-size:60px;
+	text-align:center;
+	color:white;
+}
+#contactcontent{
+	margin-left:auto;
+	margin-right:auto;
+}
+/**#contactbodyform{
+	margin-left:5vh;
+}
+#contactbodyform p{
+	color:white;
+	
+}
+#contactbodyform .plzmail{
+	color:white;
+	font-size:20px;
+}**/
+
+#contactinfo2{
+	margin-left:10vw;
+}
+#contactcontent p{
+	margin:10px;
+	margin-top:0px;
+	color:white;
+	
+}
+#contactcontent .pbig{
+	font-size:23px;
+}
+#contactcontent .pnorm{
+	padding-left:10px;
+}
+#contactcontent a{
+	text-decoration:none;
+	color:white;
+}
+/***************************Projects Page CSS*********************************/
+#projectsbody{
+	padding-top:15vh;
+	padding-bottom:25vh;
+	margin-left:auto;
+	margin-right:auto;
+}
+#projectsbody .head{
+	text-align:center;
+	font-size:60px;
+	color:white;
+	margin-top:50px;
+	margin-bottom:0px;
+}
+#projectsbody .title{
+	margin:0px;
+	margin-top:20px;
+	padding-left:29%;
+	font-size:40px;
+	color:white;
+}
+#projectsbody .desc{
+	font-size:15px;
+	color:white;
+	text-indent:50px;
+	padding-left:32%;
+	padding-right:32%;
+}
+#projectsbody a { 
+    color: #0EC6D7; 
+}
+#projectsbody .3dprintpics{
+	
+}
+#modalimg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#modalimg:hover {
+	opacity: 0.6;
+}
+/***************************Resume Page CSS*********************************/
+#resumebody{
+	padding-top:80px;
+	padding-bottom:80px;
+}
+#resumebody .pdfview{
+	display:block;
+	margin: 0 auto;
+	width:100%;
+	height:790px;
+}
+
+
+
+
+
+
