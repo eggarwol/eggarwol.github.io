@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
 }
-
 body{
     background-color: black;
     overflow-x: hidden;
@@ -56,12 +55,42 @@ body a{
 .header .menu{
     display: table-cell;
     vertical-align: middle;
-    text-align: end
+    text-align: end;
 }
 .header .menu ul li {
     display: inline;
     font-size: 20px;
     padding-right: 20px;
+}
+.header .hamburger{
+    background:none;
+    position:absolute;
+    top:0;
+    right:0;
+    line-height:45px;
+    padding:5px 15px 0px 15px;
+    color:#999;
+    border:0;
+    font-size:1.4em;    
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+}
+.header .cross{
+    background:none;
+    position:absolute;
+    top:0px;
+    right:0;
+    padding:7px 15px 0px 15px;
+    color:#999;
+    border:0;
+    font-size:3em;
+    line-height:65px;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
 }
 /********************Intro CSS*************************/
 #intro{
@@ -285,4 +314,10 @@ body a{
 }
 #contact .link img{
     width:80%;
+}
+/***************************************************Mobile CSS*******************************************************/
+@media screen and (orientation:portrait) {
+    .header .menu{
+        display: none;
+    }
 }

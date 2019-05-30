@@ -7,11 +7,6 @@
     <title>Edward Garwol</title>
     <link rel="icon" type="image/png" href="images/icon.png">
     <script src="js/jquery-3.1.1.min.js"></script>
-    <script>
-        lightbox.option({
-            'fitImagesInViewport': true
-        });
-    </script>
 </head>
 <body>
     <div class="header">
@@ -27,6 +22,8 @@
                 <li><a href="#contact">Contact</a></li> 
             </ul>
         </div>
+        <button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button>
     </div>
     <div id="intro">
         <img src="images/blur-codes-coding-577585_adj1.png">
@@ -196,6 +193,26 @@
                 }
             });
         });
+        
+        $( document ).ready(function() {
+
+$( ".cross" ).hide();
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
+
+});
     </script>
 </body>
 </html>
