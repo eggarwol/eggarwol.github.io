@@ -3,9 +3,10 @@
     margin: 0;
     padding: 0;
 }
-body{
+html, body{
     background-color: black;
     overflow-x: hidden;
+    height: 100%;
 }
 body a{
     color: white;
@@ -18,7 +19,7 @@ body a{
     justify-content: space-between;
     font-family: calibri light;
     color: white;
-    height: 70px;
+    height: auto;
     min-width: 100%;
     background-color: transparent;
     -webkit-transition: all ease-out .35s;
@@ -39,6 +40,7 @@ body a{
     font-size: 40px;
     padding-left: 20px;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 .header .name a{
     display: table-cell;
@@ -70,10 +72,10 @@ body a{
     bottom:0;
     right:0;
     line-height:45px;
-    padding:0px 15px 0px 15px;
+    padding:0px 20px 0px 20px;
     color:#ffffffff;
     border:0;
-    font-size:2.5em;    
+    font-size:5em;    
     font-weight:bold;
     cursor:pointer;
     outline:none;
@@ -84,10 +86,10 @@ body a{
     position:absolute;
     top:0;
     right:0;
-    padding:15px 18px 0px 15px;
+    padding:40px 20px 0px 20px;
     color:#ffffffff;
     border:0;
-    font-size:5em;
+    font-size:10em;
     line-height:65px;
     font-weight:bold;
     cursor:pointer;
@@ -321,13 +323,19 @@ body a{
 @media screen and (orientation:portrait) {
     
     /********************Header CSS*************************/
+    .header{
+        background-color: #000000bb;
+    }
     .header .hamburger{
         display: inherit;
     }
     .header .menu2{
         display: none;
     }
-    .header .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:14px;}
+    .header .name{
+        font-size: 70px;
+    }
+    .header .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:60px;}
     .header .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
     .header .menu li {display: block;  background:#000000; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
     .header .menu li:hover{display: block;    background:#007fba; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
@@ -361,17 +369,17 @@ body a{
         top: 45vh;
         left: 50%;
         transform: translate(-50%, -40%);
-        font-size: 50px;
+        font-size: 100px;
         width: 100%;
         text-align: center;
     }
     #intro .subtext{
         position: absolute;
-        padding-top: 90px;
+        padding-top: 150px;
         top: 45vh;
         left: 50%;
         transform: translate(-50%, -47%);
-        font-size: 20px;
+        font-size: 40px;
         width: 100%;
         text-align: center;  
     }
