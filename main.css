@@ -52,17 +52,18 @@ body a{
     color: white;
     text-decoration: none;
 }
-.header .menu{
+.header .menu2{
     display: table-cell;
     vertical-align: middle;
     text-align: end;
 }
-.header .menu ul li {
+.header .menu2 ul li {
     display: inline;
     font-size: 20px;
     padding-right: 20px;
 }
 .header .hamburger{
+    display: none;
     background:none;
     position:absolute;
     top:0;
@@ -90,7 +91,7 @@ body a{
     font-weight:bold;
     cursor:pointer;
     outline:none;
-    z-index:10000000000000;
+  z-index:10000000000000;
 }
 /********************Intro CSS*************************/
 #intro{
@@ -317,7 +318,25 @@ body a{
 }
 /***************************************************Mobile CSS*******************************************************/
 @media screen and (orientation:portrait) {
-    .header .menu{
+    .header .hamburger{
+        display: inherit;
+    }
+    .header .menu2{
         display: none;
+    }
+    .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:14px;}
+    .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+    .menu li {display: block;  background:#000000; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+    .menu li:hover{display: block;    background:#007fba; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+    .menu ul li a { text-decoration:none;  margin: 0px; color:#ffffff;}
+    .menu ul li a:hover {  color: #dddddd; text-decoration:none;}
+    .menu a{text-decoration:none; color:#666;}
+    .menu a:hover{text-decoration:none; color:#666;}
+    .header{display:inline-block; font-size:12px;}
+}
+
+@media screen and (orientation:portrait) {
+    .header .menu{
+        display: table-cell;
     }
 }
