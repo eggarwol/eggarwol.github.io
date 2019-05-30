@@ -1,252 +1,288 @@
 /********************Overall CSS*************************/
-html,
-body {
-    margin:0;
-	padding:0;
-	height:100%;
-	overflow-x:hidden;
-	background-color:#282828;
-    background-image:url("images/black_linen_v2_@2X.png");
-}
-#wrapper{
-	min-height:100%;
-	position:relative;
-}
-#navbar{
-    position:absolute;
-    width:100%;
-	min-width:900px;
-    height:80px;
-	vertical-align:center;
-    background-color: #363636; 
-}
-#navbar ul {
-    position:absolute;
-    top:50%;
-	transform: translate(0, -50%);
-    right:0;
+*{
     margin: 0;
-    padding: 0px; 
-    border: 0;
-    list-style-type: none;
-} 
-#navbar p {
-	font-size:50px;
-	font-family:"Arial Unicode MS";
-	color:white;
-    margin: 0;
-	position:absolute;
-	top:50%;
-	transform: translate(0, -50%);
-	margin-left:30px;
-    cellspacing: 0;
-    cellpadding: 0;
-} 
-#navbar ul li {
-    display:inline;
-} 
-#navbar a { 
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+body a{
+    color: white;
+}
+/********************Header CSS*************************/
+.header{
+    position: fixed;
+    z-index:2;
+    display: table;
+    justify-content: space-between;
+    font-family: calibri light;
+    color: white;
+    height: 70px;
+    min-width: 100%;
+    background-color: transparent;
+    -webkit-transition: all ease-out .35s;
+    -moz-transition: all ease-out .35s;
+    -o-transition: all ease-out .35s;
+    transition: all ease-out .35s;
+}
+.header.active{
+    background-color: #000000bb;
+    -webkit-transition: all ease-out .35s;
+    -moz-transition: all ease-out .35s;
+    -o-transition: all ease-out .35s;
+    transition: all ease-out .35s;
+}
+.header .name{
+    color: white;
     text-decoration: none;
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.header .name a{
+    display: table-cell;
+    vertical-align: middle;
+}
+.header a:hover{
+    color: #dddddd;
+    text-decoration: none;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.header .menu{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: end
+}
+.header .menu ul li {
+    display: inline;
     font-size: 20px;
-	padding-right:15px;
-	padding-left:15px;
-	padding-top:30px;
-	padding-bottom:30px;
-    color: white; 
-} 
-#navbar ul li a:hover { 
-    color: #0EC6D7; 
-    background-color: #424242; 
+    padding-right: 20px;
 }
-#footerbar{
-    position:absolute;
-	bottom:0;
-	width:100%;
-	min-width:900px;
-	height:80px;
-    background-color: #363636;
+/********************Intro CSS*************************/
+#intro{
+    position:relative;
+    z-index:1;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-family: calibri light;
 }
-#footerbar ul{
-	position:absolute;
-    bottom:0;
-    right:0;
-    margin: 0;
-    padding: 0px; 
-    border: 0;
-    list-style-type: none;
+#intro img{
+    position: absolute;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    height: 100%;
+    opacity: 0.35;
+    
 }
-#footerbar ul li{
-	display:inline;
+#intro .text{
+    position: absolute;
+    top: 45vh;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 7.5vh;
+    width: 100%;
+    text-align: center;
 }
-#footerbar a img { 
-    width:40px;
-	padding-right:.7vw;
-	padding-left:.7vw;
-	position: relative;
-	bottom: 10px;	
+#intro .subtext{
+    position: absolute;
+    padding-top: 120px;
+    top: 45vh;
+    left: 50%;
+    transform: translate(-50%, -47%);
+    font-size: 30px;
+    width: 100%;
+    text-align: center;  
 }
-#footerbar .phone {
-	position: relative;
-	bottom: 17px;	
-	padding-right:.7vw;
-	padding-left:.7vw;
-	font-size:20px;
-	color:white;
+/********************About Me CSS*************************/
+#about_me{
+    font-family: calibri light;
+    padding-top: 70px;
 }
-/***************************Home Page CSS*********************************/
-#mainbody{
-	padding-top:70px;
-	padding-bottom:70px;
+#about_me .body{
+    display: table;
+    background-color: #007fba;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
-#mainbody .top{
-	margin-top:35vh;
-	margin-bottom:0;
-	text-align:center;
-	color:white;
-	font-size:100px;
+#about_me .body .title{
+    color: white;
+    font-size: 50px;
+    text-align: center;
 }
-#mainbody .sub{
-	margin-top:2px;
-	text-align:center;
-	color:white;
-	font-size:35px;
+#about_me .body .portrait{
+    display: table-cell;
+    vertical-align: middle;
+    width: 300px;
+    padding-left: 20%;
+    padding-right: 50px;
 }
-
-/************************About Me Page CSS********************************/
-#aboutmebody{
-	padding-top:15vh;
-	padding-bottom:70px;
-	margin-left:auto;
-	margin-right:auto;
+#about_me .body .text{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 50px;
+    color: white;
+    font-size: 20px;
 }
-#aboutmebody .title{
-	font-size:60px;
-	text-align:center;
-	color:white;
-	margin:0px;
-	margin-top:50px;
+/********************Projects CSS*************************/
+#projects{
+    color:white;
+    font-family: calibri light;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
-#imagebody .headshot{
-	width:27vh;
-	min-width:300px;
-	margin-top:1vh;
-	display:block;
-	margin:auto;
+#projects .body{
+    width: 100%;
+    color: white;
+    padding-top: 70px;
 }
-#tabbio{
-	padding-bottom:25vh;
-}	
-#textbody .bio{
-	font-size:20px;
-	color:white;
-	width:70vh;
-	/**margin-left:10vw;**/
-	min-width:400px;
-	text-indent: 50px;
+#projects .slot1{
+    background-color: #000000;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 70px;
 }
-/***************************Contact Page CSS*********************************/
-#contactbody{
-	display:block;
-	padding-top:15vh;
-	margin:auto;
-	width:100%;
+#projects .slot2{
+    background-color: #007fba;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 70px;
 }
-#contactbodyhead p{
-	font-size:60px;
-	text-align:center;
-	color:white;
+#projects .slot3{
+    background-color: #000000;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 70px;
 }
-#contactcontent{
-	margin-left:auto;
-	margin-right:auto;
+#projects table{
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 25vw;
+    padding-right: 25vw;
 }
-/**#contactbodyform{
-	margin-left:5vh;
+#projects td{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-#contactbodyform p{
-	color:white;
-	
+#projects .title{
+    color: white;
+    font-size: 50px;
 }
-#contactbodyform .plzmail{
-	color:white;
-	font-size:20px;
-}**/
-
-#contactinfo2{
-	margin-left:10vw;
+#projects .subtitle{
+    color: white;
+    font-size: 35px;
+    text-align: center;
 }
-#contactcontent p{
-	margin:10px;
-	margin-top:0px;
-	color:white;
-	
+#projects p{
+    color: white;
 }
-#contactcontent .pbig{
-	font-size:23px;
+#projects img{
+    border-style: solid;
+    border-color: #007fba;
+    border-width: 3px;
 }
-#contactcontent .pnorm{
-	padding-left:10px;
+#projects .slot1 img{
+    max-width: 50%;
 }
-#contactcontent a{
-	text-decoration:none;
-	color:white;
+#projects .slot3 img{
+    max-width: 95%;
 }
-/***************************Projects Page CSS*********************************/
-#projectsbody{
-	padding-top:15vh;
-	padding-bottom:25vh;
-	margin-left:auto;
-	margin-right:auto;
+/********************Skills CSS*************************/
+#skills{
+    color:white;
+    font-family: calibri light;
+    padding-top: 70px;
 }
-#projectsbody .head{
-	text-align:center;
-	font-size:60px;
-	color:white;
-	margin-top:50px;
-	margin-bottom:0px;
+#skills .body{
+    background-color: #007fba;
+    width: 100%;
+    color: white;
+    padding-bottom: 70px;
+    
 }
-#projectsbody .title{
-	margin:0px;
-	margin-top:20px;
-	padding-left:29%;
-	font-size:40px;
-	color:white;
+#skills table{
+    color:white;
+    padding-top: 70px;
+    margin: 0 auto;
+    text-align: center;
+    border-spacing: 120 0;
 }
-#projectsbody .desc{
-	font-size:15px;
-	color:white;
-	text-indent:50px;
-	padding-left:32%;
-	padding-right:32%;
+#skills .title{
+    color: white;
+    font-size: 50px;
 }
-#projectsbody a { 
-    color: #0EC6D7; 
+#skills .subtitle{
+    font-size: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-#projectsbody .3dprintpics{
-	
+#skills .text{
+    font-size: 20px;
 }
-#modalimg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+/********************Resume CSS*************************/
+#resume{
+    color:white;
+    font-family: calibri light;
+    padding-top: 70px;
 }
-#modalimg:hover {
-	opacity: 0.6;
+#resume .body{
+    background-color: #000000;
+    width: 100%;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
 }
-/***************************Resume Page CSS*********************************/
-#resumebody{
-	padding-top:80px;
-	padding-bottom:80px;
+#resume .title{
+    font-size: 50px;
+    padding-bottom: 50px;
 }
-#resumebody .pdfview{
-	display:block;
-	margin: 0 auto;
-	width:100%;
-	height:790px;
+#resume a{
+    font-size: 25px;
+    background-color: #007fba;
+    border-radius: 40px;
+    text-decoration: none;
+    padding:10px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
-
-
-
-
-
-
+/********************Contact CSS*************************/
+#contact{
+    color:white;
+    font-family: calibri light;
+    padding-top: 70px;
+}
+#contact .body{
+    background-color: #007fba;
+    width: 100%;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+#contact table{
+    margin: 0 auto;
+    text-align: center;
+    border-spacing: 150 0;
+}
+#contact .title{
+    color: white;
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+#contact .link{
+    padding-bottom: 30px;
+}
+#contact .link img{
+    width:80%;
+}

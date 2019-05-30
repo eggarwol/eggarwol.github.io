@@ -1,38 +1,201 @@
-<!doctype html>
+<!DOCTYPE html5>
 <html>
 <head>
-	<meta charset="utf-8"/>
+    <meta charset="utf-8"/>
 	<meta name="keywords" content="edward,eddy,eddie,garwol,website,student,programmer,java,python,android,mobile,development,dev,buffalo">
 	<link rel="stylesheet" href="main.css"/>
-	<title>Home</title>
-	<link rel="icon" type="image/png" href="images/EGGfaviconwhite.png">
+    <title>Edward Garwol</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+        lightbox.option({
+            'fitImagesInViewport': true
+        });
+    </script>
 </head>
 <body>
-	<div id="wrapper">
-		<div id="navbar"> 
-			<a href="index.html"><p>Edward G. Garwol IV</p></a>
-			<ul> 
-				<li><a href="aboutme.html">About Me</a></li> 
-				<li><a href="Edward_Garwol_Resume.pdf" target="_blank">Resume</a></li> 
-				<li><a href="projects.html">Projects</a></li> 
-				<!--<li><a href="contact.html">Contact</a></li>--> 
-			</ul> 
-		</div>
-		<div id="mainbody">
-			<p class="top">Welcome to My Website</p>
-			<p class="sub">Have a look around.</p>
-		</div>
-		<div id="footerbar">
-			<ul> 
-				<li class="phone">• 716-948-7533</li>
-				<!--<li><a href="https://www.facebook.com/"><img src="images/FB-transparent.png"></a></li>-->   
-				<li><a href="MAILTO:eggarwol@buffalo.edu"><img src="images/EMAIL-transparent.png"></a></li> 
-				<li><a href="https://www.linkedin.com/in/edward-garwol-92828913b"><img src="images/linkedin.png"></a></li>
-				<li><a href="https://github.com/eggarwol"><img src="images/github.png"></a></li>
-				<li><a href="https://www.thingiverse.com/videohead118/about"><img src="images/thingiverse.png"></a></li>
-				<li><a href="https://twitter.com/eggarwol"><img src="images/TWITTER-transparent.png"></a></li>
-			</ul> 
-		</div>
-	</div>
+    <div class="header">
+        <div class="name">
+            <a href="#intro">Edward G Garwol IV</a>
+        </div>
+        <div class="menu">
+            <ul> 
+                <li><a href="#about_me">About Me</a></li> 
+                <li><a href="#projects">Projects</a></li> 
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li> 
+            </ul>
+        </div>
+    </div>
+    <div id="intro">
+        <img src="images/blur-codes-coding-577585_adj1.png">
+        <div class="text">Edward G Garwol IV</div>
+        <div class="subtext">Programmer | 3D Printing Expert</div>
+    </div>
+    <div id="about_me">
+        <div class="body">
+            <table>
+                <tr>
+                    <td colspan="2"><p class="title">About Me</p></td>
+                </tr>
+                <tr>
+                    <td><img class="portrait" src="images/00100sPORTRAIT_00100_BURST20190410102256594_COVER_round.png"></td>
+                    <td><p class="text">Hello, my name is Eddy. I am a recent graduate of the University at Buffalo with a Bachelor's of Science in Computer Science. I absolutely love all that is computers, electronics, and programming. I have been dabbling Android development as well as programming around the Raspberry Pi platform. In my free time I like to play video games, and I have also picked up a new hobby of 3D printing.</p></td>
+                </tr>
+            </table>
+            <!--
+            <p class="title">About Me</p>
+            <img class="portrait" src="images/00100sPORTRAIT_00100_BURST20190410102256594_COVER_round.png">
+            <p class="text">&emsp;&emsp; Hello, my name is Eddy. I am a recent graduate of the University at Buffalo with a Bachelor's of Science in Computer Science. I absolutely love all that is computers, electronics, and programming. I have been dabbling Android development as well as programming around the Raspberry Pi platform. In my free time I like to play video games, and I have also picked up a new hobby of 3D printing.</p>
+            -->
+        </div>
+    </div>
+    <div id="projects">
+        <div class="body">
+            <table>
+                <tr>
+                    <td colspan="2"><p class="title">Projects</p></td>
+                </tr>
+            </table>
+        </div>
+        <div class="slot1">
+            <table>
+                <tr>
+                    <td colspan="2"><p class="subtitle">Bored.io</p></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><p>Bored.io is my most recent project. The idea is, if you're bored and have no idea what you want to do, you'll end up just mindlessly browsing your phone trying to do something. This app allows you to input your basic interests and how much time and money you can spend on an activity, and from that it will give you a suggestion as to what you should do in your free time. It can show you new sports to play and where to play them, or what movies are currently in theaters and where to get tickets. Eventually the plan is to try and have some sort of social inte raction in the app where users can connect with friends or other users that also share the same interests.</p></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/Screenshot_20190219-135606.png">
+                    </td>
+                    <td>
+                       <img src="images/Screenshot_20190219-135624.png">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="slot2">
+            <table>
+                <tr>
+                    <td colspan="2"><p class="subtitle">DigiDash</p></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><p>DigiDash is an in-car digital dashboard that gives the user information about their car that they wouldn't normally have access to. This project gives the user the ability to create digital gauges and fully customize a home screen of those gauges. This project is an open source work in progress that was created and designed for my Software Engineering Concepts class at the University at Buffalo. Detailed info and how to setup DigiDash can be found <a href="https://github.com/WebsterXC/digidash" target="_blank">here</a>.</p></td>
+                </tr>
+                <tr>
+				    <td align="center">
+					   <iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/gZcLh4JdHmA" frameborder="0" allowfullscreen></iframe>
+				    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="slot3">
+            <table>
+                <tr>
+                    <td colspan="3"><p class="subtitle">3D Printing</p></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><p>For the past 3 years I've tinkered in the world of 3D printing. For the DigiDash project above, we needed a case for our Raspberry Pi and touchscreen. In our lab we had a Makerbot, but we lacked the filament necessary to print out multiple cases. I did my own research and found out that I could get an easily modifiable printer for about 300 dollars and my hobby sprung up from there. I've even been learning how to 3D model as well. Here are some pictures of what I've printed so far.</p></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/IMG_20170902_112356.jpg">
+                    </td>
+                    <td>
+                       <img src="images/IMG_20170919_093444.jpg">
+                    </td>
+                    <td>
+                       <img src="images/MVIMG_20180923_103837.jpg">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="skills">
+        <div class="body">
+            <table>
+                <tr>
+                    <td colspan="4"><p class="title">Skills</p></td>
+                </tr>
+                <tr>
+                    <td class="subtitle">Languages</td>
+                    <td class="subtitle">Operating Systems</td>
+                    <td class="subtitle">Tools</td>
+                    <td class="subtitle">Soft Skills</td>
+                </tr>
+                <tr>
+                    <td class="text">Java</td>
+                    <td class="text">Windows</td>
+                    <td class="text">Eclipse</td>
+                    <td class="text">Works Well in Teams</td>
+                </tr>
+                <tr>
+                    <td class="text">Python</td>
+                    <td class="text">Mac</td>
+                    <td class="text">IntelliJ</td>
+                    <td class="text">Easily Adaptable</td>
+                </tr>
+                <tr>
+                    <td class="text">C++</td>
+                    <td class="text">Linux</td>
+                    <td class="text">Android Studio</td>
+                    <td class="text">Problem Solver</td>
+                </tr>
+                <tr>
+                    <td class="text">C</td>
+                    <td class="text"></td>
+                    <td class="text">Git</td>
+                    <td class="text">Creative</td>
+                </tr>
+                <tr>
+                    <td class="text">Javascript</td>
+                    <td class="text"></td>
+                    <td class="text">Fusion 360</td>
+                    <td class="text">Time Management</td>
+                </tr>
+            </table>
+        </div>    
+    </div>
+    <div id="resume">
+        <div class="body">
+            <div class="title">Resume</div>
+            <a href="Edward_Garwol_Resume.pdf">View Now</a>
+        </div>    
+    </div>
+    <div id="contact">
+        <div class="body">
+            <table>
+                <tr>
+                    <td colspan="4"><p class="title">Contact</p></td>
+                </tr>
+                <tr>
+                    <td class="link"><a href="MAILTO:eggarwol@buffalo.edu"><img src="images/iconfinder_Neon_Line_Social_Circles_50Icon_10px_grid-52_1595248.png"></a></td>
+                    <td class="link"><a href="https://www.linkedin.com/in/edward-garwol-92828913b"><img src="images/iconfinder_Neon_Line_Social_Circles_50Icon_10px_grid-25_658606.png"></a></td>
+                    <td class="link"><a href="https://github.com/eggarwol"><img src="images/iconfinder_Neon_Line_Social_Circles_50Icon_10px_grid-18_658612.png"></a></td>
+                    <td class="link"><a href="https://www.thingiverse.com/videohead118/about"><img src="images/thingiverse-555149.png"></a></td>
+                </tr>
+            </table>
+        </div>    
+    </div>
+    <script>
+        $("a[href^='#']").click(function(e) {
+            e.preventDefault();
+            var position = $($(this).attr("href")).offset().top;
+            $("body, html").animate({
+                scrollTop: position} /* speed */ );
+        });
+        $(function() {
+            $(window).on("scroll", function() {
+                if($(window).scrollTop() > 50) {
+                    $(".header").addClass("active");
+                } else {
+                    $(".header").removeClass("active");
+                }
+            });
+        });
+    </script>
 </body>
-</html>     
+</html>

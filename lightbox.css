@@ -31,9 +31,9 @@ body.lb-disable-scrolling {
 
 .lightbox .lb-image {
   display: block;
-  height: auto;
-  max-width: inherit;
-  max-height: none;
+  height: 100% !important;
+  max-width: 400 !important;
+  max-height: 800 !important;
   border-radius: 3px;
 
   /* Image border */
@@ -146,10 +146,10 @@ body.lb-disable-scrolling {
   padding-top: 5px;
   *zoom: 1;
   width: 100%;
-  -moz-border-radius-bottomleft: 4px;
+  //-moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
+  //-moz-border-radius-bottomright: 4px;
   -webkit-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
