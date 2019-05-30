@@ -67,12 +67,13 @@ body a{
     background:none;
     position:absolute;
     top:0;
+    bottom:0;
     right:0;
     line-height:45px;
-    padding:5px 15px 0px 15px;
-    color:#999;
+    padding:0px 15px 0px 15px;
+    color:#ffffffff;
     border:0;
-    font-size:1.4em;    
+    font-size:2.5em;    
     font-weight:bold;
     cursor:pointer;
     outline:none;
@@ -81,12 +82,12 @@ body a{
 .header .cross{
     background:none;
     position:absolute;
-    top:0px;
+    top:0;
     right:0;
-    padding:7px 15px 0px 15px;
-    color:#999;
+    padding:15px 18px 0px 15px;
+    color:#ffffffff;
     border:0;
-    font-size:3em;
+    font-size:5em;
     line-height:65px;
     font-weight:bold;
     cursor:pointer;
@@ -98,7 +99,6 @@ body a{
     position:relative;
     z-index:1;
     height: 100%;
-    width: 100%;
     background-color: black;
     color: white;
     font-family: calibri light;
@@ -319,21 +319,63 @@ body a{
 }
 /***************************************************Mobile CSS*******************************************************/
 @media screen and (orientation:portrait) {
+    
+    /********************Header CSS*************************/
     .header .hamburger{
         display: inherit;
     }
     .header .menu2{
         display: none;
     }
-    .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:14px;}
-    .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
-    .menu li {display: block;  background:#000000; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-    .menu li:hover{display: block;    background:#007fba; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-    .menu ul li a { text-decoration:none;  margin: 0px; color:#ffffff;}
-    .menu ul li a:hover {  color: #dddddd; text-decoration:none;}
-    .menu a{text-decoration:none; color:#666;}
-    .menu a:hover{text-decoration:none; color:#666;}
+    .header .menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:14px;}
+    .header .menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+    .header .menu li {display: block;  background:#000000; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+    .header .menu li:hover{display: block;    background:#007fba; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+    .header .menu ul li a { text-decoration:none;  margin: 0px; color:#ffffff;}
+    .header .menu ul li a:hover {  color: #dddddd; text-decoration:none;}
+    .header .menu a{text-decoration:none; color:#666;}
+    .header .menu a:hover{text-decoration:none; color:#666;}
     .header{display:inline-block; font-size:12px;}
+    
+    /********************Intro CSS*************************/
+    #intro{
+        position:relative;
+        z-index:1;
+        height: 100%;
+        background-color: black;
+        color: white;
+        font-family: calibri light;
+    }
+    #intro img{
+        display:none;
+        position: absolute;
+        left: -9999px;
+        right: -9999px;
+        margin: auto;
+        height: 100%;
+        opacity: 0.35;
+        
+    }
+    #intro .text{
+        position: absolute;
+        top: 45vh;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        font-size: 50px;
+        width: 100%;
+        text-align: center;
+    }
+    #intro .subtext{
+        position: absolute;
+        padding-top: 90px;
+        top: 45vh;
+        left: 50%;
+        transform: translate(-50%, -47%);
+        font-size: 20px;
+        width: 100%;
+        text-align: center;  
+    }
+    
 }
 
 @media screen and (orientation:portrait) {
