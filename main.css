@@ -1,16 +1,17 @@
+/********************Overall CSS*************************/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: black;
+	overflow-x: hidden;
+}
+body a{
+	color: white;
+}
+/***************************************************Desktop CSS*******************************************************/
 @media screen and (orientation:landscape) {
-	/********************Overall CSS*************************/
-	*{
-		margin: 0;
-		padding: 0;
-	}
-	body{
-		background-color: black;
-		overflow-x: hidden;
-	}
-	body a{
-		color: white;
-	}
 	/********************Header CSS*************************/
 	.header{
 		position: fixed;
@@ -19,6 +20,7 @@
 		color: white;
 		min-width: 100%;
 		background-color: transparent;
+		border-bottom: solid white 1px;
 		-webkit-transition: all ease-out .35s;
 		-moz-transition: all ease-out .35s;
 		-o-transition: all ease-out .35s;
@@ -65,6 +67,9 @@
 	.header .hamburger{
 		display:none;
 	}
+	.header .name_mobile{
+		display: none;
+	}
 	/********************Intro CSS*************************/
 	#intro{
 		position:relative;
@@ -85,6 +90,7 @@
 	}
 	#intro .text{
 		position: absolute;
+		width:100%;
 		top: 45vh;
 		left: 50%;
 		transform: translate(-50%, -40%);
@@ -93,6 +99,8 @@
 	}
 	#intro .subtext{
 		position: absolute;
+				width:100%;
+
 		padding-top: 120px;
 		top: 45vh;
 		left: 50%;
@@ -287,34 +295,24 @@
 	#contact .link img{
 		width:80%;
 	}
-	}
+}
 /***************************************************Mobile CSS*******************************************************/
 @media screen and (orientation:portrait) {
-    /********************Overall CSS*************************/
-	*{
-    	margin: 0;
-    	padding: 0;
-	}
-	body{
-		background-color: black;
-		overflow-x: hidden;
-	}
-	body a{
-		color: white;
-	}
 	/********************Header CSS*************************/
 	.header{
     	position: fixed;
+		height:120px;
     	z-index:1000000;
     	font-family: calibri light;
     	color: white;
     	min-width: 100%;
-    	background-color: transparent;
+    	background-color: #000000;
     	-webkit-transition: all ease-out .35s;
     	-moz-transition: all ease-out .35s;
     	-o-transition: all ease-out .35s;
 		transition: all ease-out .35s;
 		-webkit-backface-visibility: hidden;
+		border-bottom: solid white 1px;
 	}
 	.header.active{
     	background-color: #000000;
@@ -323,7 +321,7 @@
     	-o-transition: all ease-out .35s;
     	transition: all ease-out .35s;
 	}
-	.header .name{
+	.header .name_mobile{
 		float:left;
     	color: white;
     	text-decoration: none;
@@ -332,7 +330,7 @@
     	padding-top: 10px;
     	padding-bottom: 10px;
 	}
-	.header .name a{
+	.header .name_mobile a{
 		vertical-align: middle;
 	}
 	.header a:hover{
@@ -367,23 +365,23 @@
 		padding-left:30px;
 		padding-right:20px;
 	}
-    .header{
-        background-color: #000000bb;
-    }
     .header .menu2{
         display: none;
     }
+	.header .name{
+		display: none;
+	}
     .header .menu{
-		z-index:0; font-weight:bold; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:60px; margin-top:100px;
+		z-index:10000000000; width:100%;  position:absolute; text-align:center; font-size:60px; top:120px;
 	}
     .header .menu ul {
 		margin: 0; padding: 0; list-style-type: none; list-style-image: none;
 	}
     .header .menu li {
-		display: block;  background:#000000; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;
+		display: block; padding:15px 0 15px 0; background:#000000; border-bottom:#dddddd 1px solid;
 	}
     .header .menu li:hover{
-		display: block;    background:#007fba; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;
+		display: block; padding:15px 0 15px 0; background:#007fba; border-bottom:#dddddd 1px solid;
 	}
     .header .menu ul li a {
 		text-decoration:none;  margin: 0px; color:#ffffff;
@@ -439,7 +437,7 @@
 	/********************About Me CSS*************************/
 	#about_me{
 		font-family: calibri light;
-		padding-top: 70px;
+		padding-top: 120px;
 	}
 	#about_me .body{
 		display: table;
@@ -475,7 +473,7 @@
 	#projects{
 		color:white;
 		font-family: calibri light;
-		padding-top: 70px;
+		padding-top: 120px;
 		padding-bottom: 70px;
 		width: 100%;
 	}
@@ -539,7 +537,7 @@
 	#skills{
 		color:white;
 		font-family: calibri light;
-		padding-top: 70px;
+		padding-top: 120px;
 	}
 	#skills .body{
 		background-color: #007fba;
@@ -571,7 +569,7 @@
 	#resume{
 		color:white;
 		font-family: calibri light;
-		padding-top: 70px;
+		padding-top: 120px;
 	}
 	#resume .body{
 		background-color: #000000;
@@ -598,7 +596,7 @@
 	#contact{
 		color:white;
 		font-family: calibri light;
-		padding-top: 70px;
+		padding-top: 120px;
 	}
 	#contact .body{
 		background-color: #007fba;
