@@ -366,7 +366,6 @@ body a{
     	outline:none;
     	z-index:10000000000000;
 		margin-right:20px;
-		margin-top:10px;
 	}
 	.header .cross{
 		float:right;
@@ -377,8 +376,7 @@ body a{
     	cursor:pointer;
 		outline:none;
   		z-index:10000000000000;
-		padding-left:30px;
-		padding-right:20px;
+		margin-right:20px;
 	}
     .header .menu2{
         display: none;
@@ -393,10 +391,10 @@ body a{
 		margin: 0; padding: 0; list-style-type: none; list-style-image: none;
 	}
     .header .menu li {
-		display: block; padding:15px 0 15px 0; background:#000000; border-bottom:#dddddd 1px solid;
+		display: block; padding:30px 0 30px 0; background:#000000; border-bottom:#dddddd 1px solid;
 	}
     .header .menu li:hover{
-		display: block; padding:15px 0 15px 0; background:#007fba; border-bottom:#dddddd 1px solid;
+		display: block; padding:30px 0 30px 0; background:#007fba; border-bottom:#dddddd 1px solid;
 	}
     .header .menu ul li a {
 		text-decoration:none;  margin: 0px; color:#ffffff;
@@ -544,7 +542,7 @@ body a{
 		padding: 10 0 10 0;
 	}
 	#skills .text{
-		font-size: 30px;
+		font-size: 20px;
 	}
 	#skills .slot1{
 		padding: 50 0 50 0;
