@@ -2,6 +2,9 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family: calibri light;
+	color: white;
+
 }
 body{
 	background-color: black;
@@ -13,10 +16,15 @@ body a{
 /***************************************************Desktop CSS*******************************************************/
 @media screen and (orientation:landscape) {
 	/********************Header CSS*************************/
+	.header .hamburger{
+		display:none;
+	}
+	.header .name_mobile{
+		display: none;
+	}
 	.header{
 		position: fixed;
 		z-index:2;
-		font-family: calibri light;
 		color: white;
 		min-width: 100%;
 		background-color: transparent;
@@ -64,12 +72,6 @@ body a{
 		font-size: 20px;
 		padding-right: 20px;
 	}
-	.header .hamburger{
-		display:none;
-	}
-	.header .name_mobile{
-		display: none;
-	}
 	/********************Intro CSS*************************/
 	#intro{
 		position:relative;
@@ -77,7 +79,6 @@ body a{
 		height: 100%;
 		background-color: black;
 		color: white;
-		font-family: calibri light;
 	}
 	#intro img{
 		position: absolute;
@@ -99,8 +100,7 @@ body a{
 	}
 	#intro .subtext{
 		position: absolute;
-				width:100%;
-
+		width:100%;
 		padding-top: 120px;
 		top: 45vh;
 		left: 50%;
@@ -110,69 +110,97 @@ body a{
 	}
 	/********************About Me CSS*************************/
 	#about_me{
-		font-family: calibri light;
 		padding-top: 70px;
+		max-width: 100%;
 	}
 	#about_me .body{
-		display: table;
 		background-color: #007fba;
 		height: auto;
-		padding-top: 70px;
-		padding-bottom: 70px;
-		padding-left: 15vw;
-		padding-right: 15vw;
+		max-width: 100%;
+  		margin: 0 auto;
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
+		padding: 25 25vmax 70 25vmax; 
 	}
-	#about_me .body .title{
-		color: white;
+	#about_me .title{
 		font-size: 50px;
 		text-align: center;
+		background-color: #007fba;
+		padding:70 0 0 0;
 	}
 	#about_me .body .portrait{
-		display: table-cell;
-		vertical-align: middle;
-		width: 300px;
-		padding-left: 20%;
-		padding-right: 50px;
+		display: inline-block;
+		padding:0px 0px 0px 0px;
+		height:300;
 	}
 	#about_me .body .text{
-		display: table-cell;
-		vertical-align: middle;
+		display: inline-block;
+		padding: 0 0 0 100;
 		text-align: center;
-		padding-right: 10%;
-		padding-left: 50px;
-		color: white;
 		font-size: 20px;
 	}
 	/********************Projects CSS*************************/
 	#projects{
-		color:white;
-		font-family: calibri light;
-		padding-top: 70px;
-		padding-bottom: 70px;
-		width: 100%;
+		max-width: 100%;
+  		margin: 0 auto;
+		padding:70 0 70 0;
 	}
 	#projects .body{
-		width: 100%;
-		color: white;
-		padding-top: 70px;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 70 0 0 0;
+	}
+	#projects .title{
+		font-size: 50px;
+		text-align: center;
+	}
+	#projects .subtitle{
+		font-size: 35px;
+		text-align: center;
 	}
 	#projects .slot1{
 		background-color: #000000;
-		width: 100%;
-		padding-top: 25px;
-		padding-bottom: 70px;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 25 22vmax 70 22vmax; 
+	}
+	#projects .slot1 .image-wrapper{
+		text-align: center;
+		padding:25 0 0 0;
+	}
+	#projects .slot1 .image-wrapper img{
+		display:inline-block;
+		width: 25vh;
+		padding: 0 50 0 50;
 	}
 	#projects .slot2{
 		background-color: #007fba;
-		width: 100%;
-		padding-top: 25px;
-		padding-bottom: 70px;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 25 22vmax 70 22vmax; 
+	}
+	#projects .slot2 .iframe-wrapper{
+		text-align: center;
+		padding:25 0 0 0;
+	}
+	#projects .slot2 .iframe-wrapper iframe{
+		width: 500;
+		height: 300;
 	}
 	#projects .slot3{
 		background-color: #000000;
-		width: 100%;
-		padding-top: 25px;
-		padding-bottom: 70px;
+		max-width: 100%;
+		margin: 0 auto;
+		padding: 25 22vmax 70 22vmax; 
+	}
+	#projects .slot3 .image-wrapper{
+		text-align: center;
+		padding:25 0 0 0;
+	}
+	#projects .slot3 .image-wrapper img{
+		width: 500;
+		height: 300;
 	}
 	#projects table{
 		margin: 0 auto;
@@ -180,26 +208,11 @@ body a{
 		padding-left: 25vw;
 		padding-right: 25vw;
 	}
-	#projects td{
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-	#projects .title{
-		color: white;
-		font-size: 50px;
-	}
-	#projects .subtitle{
-		color: white;
-		font-size: 35px;
+	#projects p{
 		text-align: center;
 	}
-	#projects p{
-		color: white;
-	}
 	#projects img{
-		border-style: solid;
-		border-color: #007fba;
-		border-width: 3px;
+		
 	}
 	#projects .slot1 img{
 		max-width: 50%;
@@ -209,91 +222,94 @@ body a{
 	}
 	/********************Skills CSS*************************/
 	#skills{
-		color:white;
-		font-family: calibri light;
-		padding-top: 70px;
-	}
-	#skills .body{
-		background-color: #007fba;
-		width: 100%;
-		color: white;
-		padding-bottom: 70px;
-
-	}
-	#skills table{
-		color:white;
-		padding-top: 70px;
-		margin: 0 auto;
-		text-align: center;
-		border-spacing: 120 0;
+		max-width: 100%;
+  		margin: 0 auto;
+		padding:70 0 70 0;
 	}
 	#skills .title{
-		color: white;
+		background-color: #007fba;
+		padding:70 0 20 0;
+	}
+	#skills .body{
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
+		background-color: #007fba;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 0 70 0;
+	}
+	#skills .body .slot1{
+		display: inline-block;
+		padding: 0 50 0 50;
+	}
+	#skills .body .slot2{
+		display: inline-block;
+		padding: 0 50 0 50;
+	}
+	#skills .body .slot3{
+		display: inline-block;
+		padding: 0 50 0 50;
+	}
+	#skills .body .slot4{
+		display: inline-block;
+		padding: 0 50 0 50;
+	}
+	#skills .title{
 		font-size: 50px;
+		text-align: center;
 	}
 	#skills .subtitle{
 		font-size: 32px;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		text-align: center;
 	}
 	#skills .text{
 		font-size: 20px;
+		text-align: center;
 	}
 	/********************Resume CSS*************************/
 	#resume{
-		color:white;
-		font-family: calibri light;
-		padding-top: 70px;
+		padding: 70 0 0 0;
 	}
 	#resume .body{
 		background-color: #000000;
 		width: 100%;
-		color: white;
-		padding-top: 70px;
-		padding-bottom: 70px;
+		padding: 0 0 70 0;
 		text-align: center;
 	}
 	#resume .title{
 		font-size: 50px;
-		padding-bottom: 50px;
+		padding: 0 0 50 0;
 	}
 	#resume a{
 		font-size: 25px;
 		background-color: #007fba;
 		border-radius: 40px;
 		text-decoration: none;
-		padding:10px;
-		padding-left: 25px;
-		padding-right: 25px;
+		padding: 10 25 10 25;
 	}
 	/********************Contact CSS*************************/
 	#contact{
-		color:white;
-		font-family: calibri light;
 		padding-top: 70px;
 	}
 	#contact .body{
 		background-color: #007fba;
-		width: 100%;
-		color: white;
-		padding-top: 70px;
-		padding-bottom: 70px;
+		max-width: 100%;
+		padding: 70 0 70 0;
 	}
-	#contact table{
+	#contact .title{
+		text-align: center;
+		font-size: 50px;
+		padding: 0 0 20 0;
+	}
+	#contact .link-wrapper{
 		margin: 0 auto;
 		text-align: center;
 		border-spacing: 150 0;
 	}
-	#contact .title{
-		color: white;
-		font-size: 50px;
-		padding-bottom: 30px;
-	}
-	#contact .link{
-		padding-bottom: 30px;
-	}
-	#contact .link img{
-		width:80%;
+	#contact .link-wrapper .link img{
+		max-width:100;
+		padding: 0 7vmax 0 7vmax;
 	}
 }
 /***************************************************Mobile CSS*******************************************************/
@@ -303,7 +319,6 @@ body a{
     	position: fixed;
 		height:120px;
     	z-index:1000000;
-    	font-family: calibri light;
     	color: white;
     	min-width: 100%;
     	background-color: #000000;
@@ -400,13 +415,12 @@ body a{
 	#intro{
 		height:100%;
         background-color: black;
-        color: white;
-        font-family: calibri light;
 		background-position: center center;
 		background-repeat: no-repeat;
   		overflow: hidden;
     }
     #intro img{
+		opacity: 0.35;
 		min-height: 100%;
 		min-width: 100%;
 		/* IE 8 */
@@ -436,189 +450,151 @@ body a{
     }
 	/********************About Me CSS*************************/
 	#about_me{
-		font-family: calibri light;
 		padding-top: 120px;
 	}
 	#about_me .body{
-		display: table;
 		background-color: #007fba;
 		height: auto;
-		padding-top: 70px;
-		padding-bottom: 70px;
-		padding-left: 15vw;
-		padding-right: 15vw;
 	}
-	#about_me .body .title{
-		color: white;
-		font-size: 50px;
+	#about_me .title{
+		font-size: 100px;
 		text-align: center;
+		padding:120 0 0 0;
+		background-color: #007fba;
 	}
 	#about_me .body .portrait{
-		display: table-cell;
-		vertical-align: middle;
-		width: 300px;
-		padding-left: 20%;
-		padding-right: 50px;
+		display: block;
+		margin-left: auto;
+  		margin-right: auto;
+		width: 500px;
+		padding:50 0 0 0;
 	}
-	#about_me .body .text{
-		display: table-cell;
-		vertical-align: middle;
+	#about_me .body  .text{
 		text-align: center;
-		padding-right: 10%;
-		padding-left: 50px;
-		color: white;
-		font-size: 20px;
+		font-size: 50px;
+		padding:50 50 120 50;
 	}
 	/********************Projects CSS*************************/
 	#projects{
-		color:white;
-		font-family: calibri light;
-		padding-top: 120px;
-		padding-bottom: 70px;
+		padding:120 0 0 0;
 		width: 100%;
 	}
 	#projects .body{
 		width: 100%;
-		color: white;
-		padding-top: 70px;
+		text-align: center;
+	}
+	#projects .body .title{
+		text-align: center;
+		font-size: 100px;
+	}
+	#projects .subtitle{
+		text-align: center;
+		font-size: 70px;
 	}
 	#projects .slot1{
 		background-color: #000000;
 		width: 100%;
-		padding-top: 25px;
-		padding-bottom: 70px;
+		padding:25 0 70 0;
 	}
 	#projects .slot2{
 		background-color: #007fba;
 		width: 100%;
-		padding-top: 25px;
-		padding-bottom: 70px;
+		padding:25 0 70 0;
 	}
 	#projects .slot3{
 		background-color: #000000;
 		width: 100%;
-		padding-top: 25px;
-		padding-bottom: 70px;
-	}
-	#projects table{
-		margin: 0 auto;
-		text-align: center;
-		padding-left: 25vw;
-		padding-right: 25vw;
-	}
-	#projects td{
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-	#projects .title{
-		color: white;
-		font-size: 50px;
-	}
-	#projects .subtitle{
-		color: white;
-		font-size: 35px;
-		text-align: center;
+		padding:25 0 70 0;
 	}
 	#projects p{
-		color: white;
+		font-size: 30px;
+		padding:25 50 25 50;
 	}
-	#projects img{
-		border-style: solid;
-		border-color: #007fba;
-		border-width: 3px;
-	}
+
 	#projects .slot1 img{
-		max-width: 50%;
+		max-width: 40%;
+	}
+	#projects .slot2 iframe{
+		width: 900px;
+		height: 500px;
+		padding: 30 0 30 0;
 	}
 	#projects .slot3 img{
-		max-width: 95%;
+		max-width: 85%;
+		padding: 0 0 20 0;
 	}
 	/********************Skills CSS*************************/
 	#skills{
-		color:white;
-		font-family: calibri light;
-		padding-top: 120px;
+		padding: 120 0 0 0;
 	}
 	#skills .body{
 		background-color: #007fba;
 		width: 100%;
-		color: white;
-		padding-bottom: 70px;
-
-	}
-	#skills table{
-		color:white;
-		padding-top: 70px;
-		margin: 0 auto;
+		padding: 0 0 120 0;
 		text-align: center;
-		//border-spacing: 120 0;
 	}
 	#skills .title{
-		color: white;
-		font-size: 50px;
+		font-size: 100px;
+		text-align: center;
+		background-color: #007fba;
+		padding: 120 0 0 0;
 	}
 	#skills .subtitle{
-		font-size: 32px;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		font-size: 60px;
+		padding: 10 0 10 0;
 	}
 	#skills .text{
-		font-size: 20px;
+		font-size: 30px;
+	}
+	#skills .slot1{
+		padding: 50 0 50 0;
+	}
+	#skills .slot2{
+		padding: 50 0 0 0;
+	}
+	#skills .slot3{
+		padding: 0 0 50 0;
+	}
+	#skills .slot4{
+		padding: 40 0 50 0;
 	}
 	/********************Resume CSS*************************/
 	#resume{
-		color:white;
-		font-family: calibri light;
 		padding-top: 120px;
 	}
 	#resume .body{
 		background-color: #000000;
 		width: 100%;
-		color: white;
-		padding-top: 70px;
-		padding-bottom: 70px;
+		padding: 120 0 120 0;
 		text-align: center;
 	}
 	#resume .title{
-		font-size: 50px;
-		padding-bottom: 50px;
+		font-size: 100px;
+		padding: 0 0 100 0;
 	}
 	#resume a{
-		font-size: 25px;
+		font-size: 50px;
 		background-color: #007fba;
-		border-radius: 40px;
+		border-radius: 50px;
 		text-decoration: none;
-		padding:10px;
-		padding-left: 25px;
-		padding-right: 25px;
+		padding: 20 35 20 35;
 	}
 	/********************Contact CSS*************************/
 	#contact{
-		color:white;
-		font-family: calibri light;
 		padding-top: 120px;
 	}
 	#contact .body{
 		background-color: #007fba;
 		width: 100%;
-		color: white;
-		padding-top: 70px;
-		padding-bottom: 70px;
-	}
-	#contact table{
-		margin: 0 auto;
-		text-align: center;
-		border-spacing: 150 0;
+		padding: 70 0 70 0;
 	}
 	#contact .title{
-		color: white;
-		font-size: 50px;
-		padding-bottom: 30px;
-	}
-	#contact .link{
-		padding-bottom: 30px;
+		font-size: 100px;
+		text-align: center;
+		padding: 0 0 50 0;
 	}
 	#contact .link img{
-		width:80%;
+		width:253px;
+		padding: 0 0 70 0;
 	}
 }
