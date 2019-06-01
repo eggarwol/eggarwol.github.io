@@ -319,9 +319,8 @@ body a{
     	position: fixed;
 		height:120px;
     	z-index:1000000;
-    	color: white;
     	min-width: 100%;
-    	background-color: #000000;
+    	background-color: tramsparent;
     	-webkit-transition: all ease-out .35s;
     	-moz-transition: all ease-out .35s;
     	-o-transition: all ease-out .35s;
@@ -330,7 +329,7 @@ body a{
 		border-bottom: solid white 1px;
 	}
 	.header.active{
-    	background-color: #000000;
+    	background-color: #000000dd;
     	-webkit-transition: all ease-out .35s;
     	-moz-transition: all ease-out .35s;
     	-o-transition: all ease-out .35s;
@@ -385,19 +384,19 @@ body a{
 		display: none;
 	}
     .header .menu{
-		z-index:10000000000; width:100%;  position:absolute; text-align:center; font-size:60px; top:120px;
+		z-index:10000000000; width:100%;  position:absolute; text-align:center; font-size:60px; top:120px; color:transparent;
 	}
     .header .menu ul {
 		margin: 0; padding: 0; list-style-type: none; list-style-image: none;
 	}
     .header .menu li {
-		display: block; padding:30px 0 30px 0; background:#000000; border-bottom:#dddddd 1px solid;
+		display: block; padding:30px 0 30px 0; background:#000000dd; border-bottom:#dddddd 1px solid;
 	}
     .header .menu li:hover{
-		display: block; padding:30px 0 30px 0; background:#007fba; border-bottom:#dddddd 1px solid;
+		display: block; padding:30px 0 30px 0; background:#007fbadd; border-bottom:#dddddd 1px solid;
 	}
     .header .menu ul li a {
-		text-decoration:none;  margin: 0px; color:#ffffff;
+		text-decoration:none;  margin: 0px; color:ffffff;
 	}
     .header .menu ul li a:hover {
 		color: #dddddd; text-decoration:none;
@@ -584,7 +583,7 @@ body a{
 	#contact .body{
 		background-color: #007fba;
 		width: 100%;
-		padding: 70 0 70 0;
+		padding: 120 0 120 0;
 	}
 	#contact .title{
 		font-size: 100px;
@@ -594,6 +593,6 @@ body a{
 	#contact .link img{
 		margin: 0 auto;
 		width:200px;
-		padding: 0 26 50 26;
+		padding: 50 26 0 26;
 	}
 }

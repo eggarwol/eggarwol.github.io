@@ -18,11 +18,11 @@
 		</div>
         <div class="menu" style="display: none;">
             <ul> 
-                <li><a href="#about_me">About Me</a></li> 
-                <li><a href="#projects">Projects</a></li> 
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li> 
+                <a href="#about_me"><li class="hamburger-element">About Me</li></a>
+                <a href="#projects"><li class="hamburger-element">Projects</li></a>
+                <a href="#skills"><li class="hamburger-element">Skills</li></a>
+                <a href="#resume"><li class="hamburger-element">Resume</li></a>
+                <a href="#contact"><li class="hamburger-element">Contact</li></a>
             </ul>
         </div>
         <div class="menu2">
@@ -137,7 +137,7 @@
             e.preventDefault();
             var position = $($(this).attr("href")).offset().top;
             $("body, html").animate({
-                scrollTop: position} /* speed */ );
+                scrollTop: position}, 800);
         });
         $(function() {
             $(window).on("scroll", function() {
@@ -148,19 +148,19 @@
                 }
             });
         });
-        $( document ).ready(function() {
-            $( ".cross" ).hide();
-            $( ".menu" ).hide();
-            $( ".hamburger" ).click(function() {
-                $( ".menu" ).slideToggle( "slow", function() {
-                    $( ".hamburger" ).hide();
-                    $( ".cross" ).show();
+        $(document).ready(function(){
+            $(".cross").hide();
+            $(".menu").hide();
+            $(".hamburger").click(function(){
+                $(".menu").slideToggle(200, function(){
+                    $(".hamburger").hide();
+                    $(".cross").show();
                 });
             });
-            $( ".cross" ).click(function() {
-                $( ".menu" ).slideToggle( "slow", function() {
-                    $( ".cross" ).hide();
-                    $( ".hamburger" ).show();
+            $(".cross, .hamburger-element").click(function(){
+                $(".menu").slideToggle(200, function(){
+                    $(".cross").hide();
+                    $(".hamburger").show();
                 });
             });
         });
