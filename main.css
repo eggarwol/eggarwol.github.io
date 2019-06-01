@@ -471,7 +471,7 @@ body a{
 	}
 	#about_me .body  .text{
 		text-align: center;
-		font-size: 50px;
+		font-size: 30px;
 		padding:50 50 120 50;
 	}
 	/********************Projects CSS*************************/
@@ -507,7 +507,7 @@ body a{
 		padding:25 0 70 0;
 	}
 	#projects p{
-		font-size: 30px;
+		font-size: 20px;
 		padding:25 50 25 50;
 	}
 
@@ -594,7 +594,8 @@ body a{
 		padding: 0 0 50 0;
 	}
 	#contact .link img{
-		width:253px;
-		padding: 0 0 70 0;
+		margin: 0 auto;
+		width:200px;
+		padding: 0 26 50 26;
 	}
 }
