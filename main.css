@@ -163,7 +163,7 @@ body a{
 		background-color: #000000;
 		max-width: 100%;
 		margin: 0 auto;
-		padding: 25 22vmax 70 22vmax; 
+		padding: 70 22vmax 70 22vmax; 
 	}
 	#projects .slot1 .image-wrapper{
 		text-align: center;
@@ -178,7 +178,7 @@ body a{
 		background-color: #007fba;
 		max-width: 100%;
 		margin: 0 auto;
-		padding: 25 22vmax 70 22vmax; 
+		padding: 70 22vmax 70 22vmax; 
 	}
 	#projects .slot2 .iframe-wrapper{
 		text-align: center;
@@ -192,7 +192,7 @@ body a{
 		background-color: #000000;
 		max-width: 100%;
 		margin: 0 auto;
-		padding: 25 22vmax 70 22vmax; 
+		padding: 70 22vmax 70 22vmax; 
 	}
 	#projects .slot3 .image-wrapper{
 		text-align: center;
@@ -447,7 +447,7 @@ body a{
     }
 	/********************About Me CSS*************************/
 	#about_me{
-		padding-top: 120px;
+		padding: 120 0 0 0;
 	}
 	#about_me .body{
 		background-color: #007fba;
@@ -473,7 +473,7 @@ body a{
 	}
 	/********************Projects CSS*************************/
 	#projects{
-		padding:120 0 0 0;
+		padding:120 0 50 0;
 		width: 100%;
 	}
 	#projects .body{
@@ -487,25 +487,26 @@ body a{
 	#projects .subtitle{
 		text-align: center;
 		font-size: 70px;
+		padding:70 0 70 0;
 	}
 	#projects .slot1{
 		background-color: #000000;
 		width: 100%;
-		padding:25 0 70 0;
+		padding:0 0 50 0;
 	}
 	#projects .slot2{
 		background-color: #007fba;
 		width: 100%;
-		padding:25 0 70 0;
+		padding:0 0 50 0;
 	}
 	#projects .slot3{
 		background-color: #000000;
 		width: 100%;
-		padding:25 0 70 0;
+		padding:0 0 0 0;
 	}
 	#projects p{
 		font-size: 20px;
-		padding:25 50 25 50;
+		padding:0 50 70 50;
 	}
 
 	#projects .slot1 img{
@@ -514,11 +515,11 @@ body a{
 	#projects .slot2 iframe{
 		width: 900px;
 		height: 500px;
-		padding: 30 0 30 0;
+		padding: 0 0 70 0;
 	}
 	#projects .slot3 img{
 		max-width: 85%;
-		padding: 0 0 20 0;
+		padding: 0 0 70 0;
 	}
 	/********************Skills CSS*************************/
 	#skills{
