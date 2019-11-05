@@ -1,0 +1,48 @@
+*{
+    font-family: calibri light;
+}
+html,body{
+    height: 100%;
+    margin:0;
+    padding:0;
+    background-color: black;
+}
+.navbar{
+    background-color: transparent;
+    border-bottom: solid white 1px;
+    padding: 4 0 4 0;
+}
+.navbar-brand{
+    font-size: 2.5em;
+    padding: 0 0 0 20;
+}
+.nav-item{
+    font-size: 1.25em;
+    padding: 0 10 0 0;
+    text-align: center;
+}
+.navbar-nav li a{
+    color: white !important;
+}
+.navbar-nav li a:hover{
+    color: #dddddd !important;
+}
+#intro{
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('images/blur-codes-coding-577585_adj.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+#intro h1,h2{
+    color:white;
+    text-align: center;
+}
+#intro h1{
+    font-size: 4em;
+}
+#intro h2{
+    font-size: 2em;
+}
