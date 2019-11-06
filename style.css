@@ -7,6 +7,22 @@ html,body{
     padding:0;
     background-color: black;
 }
+h1,h2,h3,p{
+    color:white;
+    text-align: center;
+}
+h1{
+    font-size: 4em;
+}
+h2{
+    font-size: 3em;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1.5em;
+}
 .navbar{
     background-color: transparent;
     border-bottom: solid white 1px;
@@ -35,14 +51,4 @@ html,body{
     background-image: url('images/blur-codes-coding-577585_adj.jpg');
     background-size: cover;
     overflow: hidden;
-}
-#intro h1,h2{
-    color:white;
-    text-align: center;
-}
-#intro h1{
-    font-size: 4em;
-}
-#intro h2{
-    font-size: 2em;
 }
